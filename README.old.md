@@ -1,1 +1,0 @@
-# manjeetkaur-frontend
