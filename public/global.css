@@ -1,7 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
-a{
-    text-decoration: none;
+:root {
+  --red: #CD0404;
+  --maroon: #850000;
+  --text: #ddd;
+  --black: #000;
+}
+a {
+  text-decoration: none;
 }

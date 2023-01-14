@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #333;
+    padding: 8px 30px;
+    box-shadow: 0 0 2px 3px  rgba(175, 175, 175, 0.829);
 }
 .navbarContainer .brand{
     display: flex;
@@ -13,6 +13,10 @@
 .navbarContainer h2{
     margin: 0;
 }
+.navbarContainer .initials{
+    color: var(--red);
+    font-family: 'Gloria Hallelujah', cursive;
+}
 .navbarLinks ul{
     display: flex;
     list-style: none;
@@ -20,4 +24,11 @@
 }
 .navbarLinks li{
     padding: 0 10px;
+}
+.navbarLinks a{
+    color: var(--red);
+    font-weight: 500;
+}
+.navbarLinks a:hover{
+    color: var(--maroon);
 }
