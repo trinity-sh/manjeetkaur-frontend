@@ -1,5 +1,5 @@
-import * as React from "react"
-import "./styles/svgcomp.css"
+import * as React from "react";
+import "./styles/svgcomp.css";
 const SvgComponent = (props) => (
   <svg
     className="waves"
@@ -16,12 +16,12 @@ const SvgComponent = (props) => (
       />
     </defs>
     <g className="parallax">
-      <use xlinkHref="#a" x={48} fill="rgba(140,255,140,0.7" />
-      <use xlinkHref="#a" x={48} y={3} fill="rgba(140,255,140,0.5)" />
-      <use xlinkHref="#a" x={48} y={5} fill="#90ee90" />
-      <use xlinkHref="#a" x={48} y={7} fill="green" />
+      <use xlinkHref="#a" x={48} fill="#d34242" />
+      <use xlinkHref="#a" x={48} y={3} fill="#FF6464" />
+      <use xlinkHref="#a" x={48} y={5} fill="#FF9292" />
+      <use xlinkHref="#a" x={48} y={7} fill="#EC7272" />
     </g>
   </svg>
-)
+);
 
-export default SvgComponent
+export default SvgComponent;

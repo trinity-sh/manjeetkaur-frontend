@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import SvgComponent from "./SvgComp";
+import "./styles/header.css"
 function Header() {
   return (
-    <div>Header</div>
-  )
+    <div>
+      <div className="header"></div>
+      <SvgComponent />
+    </div>
+  );
 }
 
-export default Header
+export default Header;
