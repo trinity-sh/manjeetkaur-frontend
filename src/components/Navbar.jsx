@@ -1,7 +1,10 @@
 import React from 'react'
 import "./styles/navbar.css"
+import Topbar from "./Topbar"
 const Navbar = () => {
   return (
+    <>
+    <Topbar/>
     <div className="navbarContainer">
       <div className="brand">
         <img src="" />
@@ -27,6 +30,7 @@ const Navbar = () => {
         <a href="/donate">Donate</a>
       </div>
     </div>
+    </>
   )
 }
 

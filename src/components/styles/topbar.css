@@ -1,0 +1,23 @@
+.navbar2-container {
+    color: #eee;
+    background: rgb(206, 74, 13);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+    width: 100%;
+    padding: 3px 20px 10px;
+  }
+  
+  .social-handles a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .social-handles a:hover {
+    color: rgb(0, 64, 255);
+  }
+  .social-icons {
+    font-size: 18px;
+    padding-right: 30px;
+    margin: 10px 10px 0 10px;
+  }
