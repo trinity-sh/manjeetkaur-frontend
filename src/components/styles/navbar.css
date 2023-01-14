@@ -1,34 +1,46 @@
-.navbarContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 30px;
-    box-shadow: 0 0 2px 3px  rgba(175, 175, 175, 0.829);
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  /* box-shadow: 0 0 15px 0px rgba(104, 104, 104, 0.829); */
+  position: relative;
 }
-.navbarContainer .brand{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.brand {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 220px;
+  height: 180px;
 }
-.navbarContainer h2{
-    margin: 0;
+.brand img {
+  width: 100%;
 }
-.navbarContainer .initials{
-    color: var(--red);
-    font-family: 'Gloria Hallelujah', cursive;
+.navbarContainer .initials {
+  color: var(--red);
+  font-family: "Gloria Hallelujah", cursive;
 }
-.navbarLinks ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
+.navbarLinks {
+  flex: 1;
 }
-.navbarLinks li{
-    padding: 0 10px;
+.navbarLinks ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
-.navbarLinks a{
-    color: var(--red);
-    font-weight: 500;
+.navbarLinks li {
+  padding: 0 10px;
 }
-.navbarLinks a:hover{
-    color: var(--maroon);
+.navbarLinks a {
+  color: var(--red);
+  font-weight: 600;
+}
+.navbarLinks a:hover {
+  color: var(--maroon);
+}
+.donateBtn {
 }
