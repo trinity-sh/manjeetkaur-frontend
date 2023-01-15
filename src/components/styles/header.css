@@ -4,9 +4,9 @@
       rgba(178, 138, 101, 0.8),
       rgba(34, 32, 41, 0.5)
     ),
-    url(../../assets/324395499_160579490061907_5581649407195347012_n.jpeg)
+    url(../../assets/coronavirus_student_pti_6_1200x768.webp)
       center no-repeat;
-  background-size: contain;
+  background-size: cover;
   object-fit: cover;
   height: 100vh;
   display: flex;
