@@ -28,11 +28,11 @@
 
 .header-text h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #8338ec;
+  -webkit-text-stroke: 2px #ec7d38;
 }
 
 .header-text h2:nth-child(2) {
-  color: #c19bf5;
+  color: #f5c49b;
   animation: animate 4s ease-in-out infinite;
 }
 
