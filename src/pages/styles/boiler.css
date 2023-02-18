@@ -1,0 +1,19 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(50,50,50);   
+}
+
+i a:hover {
+    color: 'red';
+    text-decoration: underline; 
+}
+
+.font-xs {
+    font-size: x-small;
+    color: #0055ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font-xs:hover {
+    text-decoration: underline;
+}

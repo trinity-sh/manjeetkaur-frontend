@@ -1,0 +1,115 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.monospace {
+    height: fit-content;
+    font-family: monospace;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.large-caps {
+    color: rgb(255, 0, 162);
+    font-variant: normal;
+}
+
+.font-lg {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+#ultra {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.peekbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 0, 162);
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.boiler2-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+
+.bodie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transform: translateY(-80px); */
+    flex-grow: 1;
+    align-self: center;
+    width: 40%;
+}
+
+.bg-logo {
+    background: url(https://cdn.discordapp.com/attachments/1076441506325475379/1076537611918786600/logo-highres.png);
+    margin-bottom: 10px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .bodie {
+        width: 90%;
+    }
+
+    .bg-logo {
+        margin-bottom: 30px;
+    }
+
+    #org-about {
+        font-size: smaller;
+    }
+}
+
+.magenta {
+    color: rgb(255, 0, 162);
+}
+
+.noto {
+    font-family: 'Noto Sans';   
+}
+
+.footer {
+    align-self: center;
+    margin: 10px;
+    height: 40px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-ic {
+    color: rgb(150, 150, 150);
+    transition: 300ms;
+}
+
+.social-ic:hover {
+    color: rgb(70, 70, 70)
+}
