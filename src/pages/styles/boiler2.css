@@ -59,30 +59,78 @@
     justify-content: center;
     /* transform: translateY(-80px); */
     flex-grow: 1;
+    width: 100%;
     align-self: center;
-    width: 40%;
 }
 
 .bg-logo {
+    align-self: center;
     background: url(https://cdn.discordapp.com/attachments/1076441506325475379/1076537611918786600/logo-highres.png);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 80%;
     height: 200px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 600px) {
-    .bodie {
-        width: 90%;
-    }
+#org-about {
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 10px;
+    width: 60%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+#social-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    font-family: 'Noto Sans';
+}
+
+.social-sub-container {
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    background: rgba(230,60,230, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    transition: 300ms;
+    width: 230px;
+}
+
+.social-text {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.social-sub-container:hover {
+    background: rgba(230, 60, 159, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
     .bg-logo {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     #org-about {
-        font-size: smaller;
+        width: 90%;
+    }
+
+    #social-container {
+        flex-direction: column;
     }
 }
 
@@ -96,13 +144,12 @@
 
 .footer {
     align-self: center;
-    margin: 10px;
-    height: 40px;
+    height: fit-content;
     width: 100%;
     max-width: 1300px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .social-ic {
