@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles/navbar.css";
 import MKF from "../assets/mkf-favicon3.png";
 
 const Navbar = () => {
