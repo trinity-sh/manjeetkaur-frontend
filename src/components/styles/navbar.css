@@ -10,9 +10,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.drop {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+.badscript {
+    font-family: 'Bad Script', cursive;
 }
 
 .navbg {
