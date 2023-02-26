@@ -16,12 +16,9 @@ const Navbar = () => {
                 <div className="h-full w-fit text-right mob:hidden flex items-center">
                     {[
                         "Home",
-                        "Mission",
+                        "About",
                         "Gallery",
-                        "Volunteer",
-                        "Blogs",
-                        "Partners & Sponsors",
-                        "FAQ",
+                        "Apply for Aid",
                         "Contact Us",
                     ].map((i) => (
                         <div className="relative group px-4 font-semibold sprosans h-full flex flex-col justify-center items-center hover:bg-pink-500 duration-300 hover:border-b-[4px] border-b-[2px] border-pink-500">
