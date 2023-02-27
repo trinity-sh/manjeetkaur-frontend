@@ -6,3 +6,19 @@ html body #root {
     height: 100%;
     width: 100%;
 }
+
+.sprosans {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.badscript {
+    font-family: 'Bad Script', cursive;
+}
