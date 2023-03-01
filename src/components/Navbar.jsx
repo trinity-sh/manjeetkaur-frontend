@@ -1,19 +1,24 @@
 import React from "react";
 import "./styles/navbar.css";
 import "../App.css";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
     return (
         <div className="w-full h-20 shadow-md flex items-center justify-center navbg">
             <div className="flex flex-row justify-between items-center w-full max-w-[1300px] h-full">
-                <div className="group px-5 w-32 overflow-visible h-20 text-5xl badscript flex items-center duration-[300ms] hover:bg-pink-500">
-                    <span className="group-hover:text-white group-hover:h-30 text-pink-500 sprosans h-full flex items-center font-bold">
+                <a
+                    href="/"
+                    className="group px-5 w-32 overflow-visible h-20 text-5xl badscript flex items-center duration-[300ms]"
+                >
+                    <img src={Logo} alt="logo" />
+                    {/* <span className="group-hover:text-white group-hover:h-30 text-pink-500 sprosans h-full flex items-center font-bold">
                         MK
                     </span>
                     <span className="group-hover:text-white group-hover:h-30 text-black badscript h-full flex items-center">
                        f
-                    </span>
-                </div>
+                    </span> */}
+                </a>
 
                 <div className="h-full w-fit text-right mob:hidden flex items-center">
                     {[
