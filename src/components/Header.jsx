@@ -1,5 +1,6 @@
 import React from "react";
 import logo1 from "../assets/logosmod11.png";
+import logo2 from "../assets/newdesign11.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
