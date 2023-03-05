@@ -17,7 +17,7 @@ function About() {
     />
 </div>
 <div className="md:w-3/4">
-    <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 ml-4 md:ml-0">
+    <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:ml-4">
         Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Sed ultricies enim et risus
         vulputate, eu tincidunt ex blandit. Sed in nunc
@@ -27,7 +27,7 @@ function About() {
         velit. Nullam porta hendrerit lectus, vel dictum
         nisi mollis nec.
     </p>
-    <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 ml-4 md:ml-0">
+    <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:ml-4">
         Sed rutrum vestibulum ante, vel aliquet magna
         fermentum ut. Sed lacinia turpis ut mauris
         dapibus aliquam. Aenean vel sapien enim. Nullam

@@ -70,7 +70,7 @@ function Gallery() {
                 <h2 className="text-xl font-semibold leading-8 tracking-tight text-pink-600">
                     Gallery
                 </h2>
-                <p className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                <p className="mt-2 md:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
                     A glipmse of our AMAZING WORK!
                 </p>
             </div>

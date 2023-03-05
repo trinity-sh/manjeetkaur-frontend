@@ -17,20 +17,20 @@ function Header() {
                         />
                     </div>
                 </div>
-                <div className="absolute top-0 sm:m-3 flex">
+                <div className="absolute top-0 mt-3 md:m-3  flex">
                     <a href="" className="p-2">
-                        <FaFacebook className=" md:text-3xl text-blue-600" />
+                        <FaFacebook className=" md:text-3xl text-blue-700 hover:text-blue-800" />
                     </a>
                     <a href="" className="p-2">
-                        <FaInstagram className="md:text-3xl text-pink-400" />
+                        <FaInstagram className="md:text-3xl text-pink-400 hover:text-pink-600" />
                     </a>
                     <a href="" className="p-2">
-                        <FaTwitter className="md:text-3xl text-blue-400" />
+                        <FaTwitter className="md:text-3xl text-blue-400 hover:text-blue-600" />
                     </a>
                 </div>
             </section>
             <div>
-                <p className="custom-font pt-24 p-b-4 font-bold text-center sm:text-2xl md:text-3xl text-pink-700">
+                <p className="custom-font pb-20 md:pb-2 md:pt-24 font-bold text-center text-lg sm:text-2xl md:text-3xl text-pink-700">
                     Laboris ullamco consectetur aliqua sit dolore nostrud quis.
                 </p>
             </div>
