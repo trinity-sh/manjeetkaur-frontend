@@ -19,13 +19,13 @@ function Header() {
                     </div>
                 </div>
                 <div className="absolute top-0 mt-3 md:m-3  flex">
-                    <a href="" className="p-2">
+                    <a href="http://www.facebook.com/groups/ManjeetKaurFoundation" className="p-2">
                         <FaFacebook className=" md:text-3xl text-blue-700 hover:text-blue-800" />
                     </a>
-                    <a href="" className="p-2">
+                    <a href="http://www.instagram.com/ManjeetKaurFoundation" className="p-2">
                         <FaInstagram className="md:text-3xl text-pink-400 hover:text-pink-600" />
                     </a>
-                    <a href="" className="p-2">
+                    <a href="http://www.twitter.com/ManjeetKaurOrg" className="p-2">
                         <FaTwitter className="md:text-3xl text-blue-400 hover:text-blue-600" />
                     </a>
                 </div>
