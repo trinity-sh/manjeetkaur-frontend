@@ -1,92 +1,81 @@
 import React from "react";
-const images = {
-    images: [
-        {
-            src: "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg",
-            alt: "image1",
-        },
-        {
-            src: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHw%3D&w=1000&q=80",
-            alt: "image2",
-        },
-        {
-            src: "https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg",
-            alt: "image3",
-        },
-        {
-            src: "https://us.123rf.com/450wm/virtosmedia/virtosmedia2301/virtosmedia230118463/197249183-fantasy-alien-planet-mountain-and-lake-3d-illustration.jpg?ver=6",
-            alt: "image4",
-        },
-        {
-            src: "https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg",
-            alt: "image5",
-        },
-        {
-            src: "https://socialstatusdp.com/wp-content/uploads/2022/12/Lord-Krishna-Images-with-Flute-with-forest-Background.jpg",
-            alt: "image6",
-        },
-    ],
-};
+import "./styles/gallery.css";
+import WspGallery from "./WspGallery";
+//importing the images
+// import Gallery1 from "../assets/Gallery/gallery1.JPG";
+// import Gallery2 from "../assets/Gallery/gallery2.jpeg";
+// import Gallery3 from "../assets/Gallery/gallery3.jpeg";
+// import Gallery4 from "../assets/Gallery/gallery4.jpeg";
+// import Gallery5 from "../assets/Gallery//gallery5.jpeg";
+// import Gallery6 from "../assets/Gallery/gallery6.jpeg";
+// import Gallery7 from "../assets/Gallery/gallery7.jpeg";
+// import Gallery8 from "../assets/Gallery/gallery8.jpeg";
+// import Gallery9 from "../assets/Gallery/gallery9.jpeg";
+// import Gallery10 from "../assets/Gallery/gallery10.jpeg";
+// import Gallery11 from "../assets/Gallery/gallery11.jpeg";
+// import Gallery12 from "../assets/Gallery/galleey12.png";
 
-function Gallery() {
+// import Gallery14 from "../assets/Gallery/galleey14.JPG";
+// import Gallery15 from "../assets/Gallery/galleey15.JPG";
+// import Gallery16 from "../assets/Gallery/galleey16.JPG";
+// import Gallery17 from "../assets/Gallery/galleey17.JPG";
+// import Gallery18 from "../assets/Gallery/galleey18.JPG";
+// import Gallery19 from "../assets/Gallery/galleey19.jpg";
+// import Gallery20 from "../assets/Gallery/gallery20.jpeg";
+// import Gallery21 from "../assets/Gallery/gallery21.jpeg";
+// import Gallery22 from "../assets/Gallery/gallery22.jpeg";
+// import Gallery23 from "../assets/Gallery/gallery23.jpeg";
+// import Gallery24 from "../assets/Gallery/gallery24.jpeg";
+// import Gallery25 from "../assets/Gallery/gallery25.jpeg";
+
+const Gallery = () => {
+    const galleryImages = [
+        {
+            img: "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHw%3D&w=1000&q=80",
+        },
+        {
+            img: "https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg",
+        },
+        {
+            img: "https://us.123rf.com/450wm/virtosmedia/virtosmedia2301/virtosmedia230118463/197249183-fantasy-alien-planet-mountain-and-lake-3d-illustration.jpg?ver=6",
+        },
+        {
+            img: "https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg",
+        },
+        {
+            img: "https://socialstatusdp.com/wp-content/uploads/2022/12/Lord-Krishna-Images-with-Flute-with-forest-Background.jpg",
+        },
+        //hardcoding images for now
+        {
+            img: "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHw%3D&w=1000&q=80",
+        },
+        {
+            img: "https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg",
+        },
+        {
+            img: "https://us.123rf.com/450wm/virtosmedia/virtosmedia2301/virtosmedia230118463/197249183-fantasy-alien-planet-mountain-and-lake-3d-illustration.jpg?ver=6",
+        },
+        {
+            img: "https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg",
+        },
+        {
+            img: "https://socialstatusdp.com/wp-content/uploads/2022/12/Lord-Krishna-Images-with-Flute-with-forest-Background.jpg",
+        },
+    ];
     return (
-        <div className="relative isolate bg-white pt-24 pb-32 sm:pt-32">
-            <div className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
-                <svg
-                    viewBox="0 0 1313 771"
-                    aria-hidden="true"
-                    className="ml-[max(50%,38rem)] w-[82.0625rem]"
-                >
-                    <path
-                        id="bc169a03-3518-42d4-ab1e-d3eadac65edc"
-                        fill="url(#85a0eca5-25f1-4ab9-af84-4e2d8d9cdbf3)"
-                        d="M360.508 589.796 231.671 770.522 0 498.159l360.508 91.637 232.034-325.485c1.485 150.396 51.235 393.965 238.354 165.069C1064.79 143.261 1002.42-107.094 1171.72 46.97c135.44 123.252 148.51 335.641 138.11 426.428L971.677 339.803l24.062 411.461-635.231-161.468Z"
-                    />
-                    <defs>
-                        <linearGradient
-                            id="85a0eca5-25f1-4ab9-af84-4e2d8d9cdbf3"
-                            x1="1313.17"
-                            x2="-88.881"
-                            y1=".201"
-                            y2="539.417"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stopColor="#9089FC" />
-                            <stop offset={1} stopColor="#FF80B5" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-            <div className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end">
-                <svg
-                    viewBox="0 0 1313 771"
-                    aria-hidden="true"
-                    className="ml-[-22rem] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] xl:ml-0 xl:mr-[calc(50%-12rem)]"
-                >
-                    <use href="#bc169a03-3518-42d4-ab1e-d3eadac65edc" />
-                </svg>
-            </div>
-            <div className="mx-auto max-w-xl text-center">
-                <h2 className="text-xl font-semibold leading-8 tracking-tight text-pink-600">
-                    Gallery
-                </h2>
-                <p className="mt-2 md:text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                    A glipmse of our AMAZING WORK!
-                </p>
-            </div>
-            <div className="max-w-10xl mx-auto p-4 sm:p-6 lg:p-8" id="gallery">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                    {images.images.map((item) => (
-                        <img
-                            src={item.src}
-                            alt={item.alt}
-                            className="w-full h-full"
-                        />
-                    ))}
-                </div>
+        <div className="gallery-container">
+            <h1 className="">Gallery</h1>
+            <div className="gallery" id="gallery">
+                <WspGallery gallerImages={galleryImages} />
             </div>
         </div>
     );
-}
+};
 
 export default Gallery;
