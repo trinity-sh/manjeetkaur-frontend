@@ -1,0 +1,140 @@
+.work-container {
+    display: flex;
+    text-align: center;
+}
+.main-container {
+    height: 100%;
+    flex: 5;
+    position: sticky;
+    top: 0;
+    padding: 50px;
+}
+.main-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.main-container .brief-info {
+    font-size: 24px;
+}
+.main-container .info-headers {
+    font-size: 28px;
+    font-weight: bold;
+}
+.main-container .brief-points {
+    font-size: 20px;
+}
+.side-container, .mobile-container {
+    height: 100%;
+    flex: 1;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.side-container .info-headers, .mobile-container .info-headers {
+    font-size: 28px;
+    font-weight: bold;
+}
+.works-mobile {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #c144ef;
+    background-image: radial-gradient(
+            93% 87% at 87% 89%,
+            rgba(0, 0, 0, 0.23) 0%,
+            transparent 86.18%
+        ),
+        radial-gradient(
+            66% 66% at 26% 20%,
+            rgba(255, 255, 255, 0.55) 0%,
+            rgba(255, 255, 255, 0) 69.79%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+        inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+        inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+        inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+        inset 0px 1px 5px rgba(255, 255, 255, 0.6),
+        2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    cursor: pointer;
+    display: none;
+}
+.mobile-container{
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .main-container {
+        flex: 5;
+        position: sticky;
+        top: 0;
+        padding: 30px;
+    }
+    .main-container h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .main-container .brief-info {
+        font-size: 16px;
+    }
+    .main-container .info-headers {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .main-container .brief-points {
+        font-size: 18px;
+    }
+    .side-container {
+        flex: 2;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .side-container .info-headers {
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .main-container h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .main-container .brief-info {
+        font-size: 16px;
+    }
+    .main-container .info-headers {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .main-container .brief-points {
+        font-size: 16px;
+    }
+    .mobile-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .works-mobile{
+        display: flex;
+    }
+    .side-container {
+        display: none;
+    }
+}

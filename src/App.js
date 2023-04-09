@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Footer from "./components/Footer";
+import Work from "./components/Work";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/work" element={<Work/>} />
             </Routes>
             <Footer />
         </BrowserRouter>
