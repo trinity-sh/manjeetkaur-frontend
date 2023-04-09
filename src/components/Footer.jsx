@@ -1,8 +1,9 @@
 const navigation = {
     main: [
         { name: "Home", href: "/" },
-        { name: "About", href: "#about" },
-        { name: "Gallery", href: "#gallery" },
+        { name: "About", href: "/about" },
+        { name: "Work", href: "/work" },
+        { name: "Gallery", href: "/#gallery" },
         { name: "Apply for Aid", href: "#aid" },
         { name: "Donate", href: "/donate" },
     ],
@@ -74,7 +75,7 @@ const navigation = {
 export default function Footer() {
     const date = new Date();
     return (
-        <footer className="bg-pink-800" >
+        <footer className="bg-pink-800">
             {/* <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
                 <nav
                     className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"

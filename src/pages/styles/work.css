@@ -1,42 +1,58 @@
 .work-container {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    /* text-align: center; */
 }
 .main-container {
     height: 100%;
-    flex: 5;
+    flex: 2;
     position: sticky;
     top: 0;
     padding: 50px;
 }
-.main-container h2 {
-    font-size: 32px;
-    font-weight: bold;
+.main-container .details {
+    padding-bottom: 20px;
 }
-.main-container .brief-info {
+.main-container .details > h2 {
     font-size: 24px;
+    font-weight: 700;
+    color: #c44986;
 }
-.main-container .info-headers {
-    font-size: 28px;
-    font-weight: bold;
-}
-.main-container .brief-points {
-    font-size: 20px;
-}
-.side-container, .mobile-container {
+.side-container,
+.mobile-container {
     height: 100%;
     flex: 1;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-.side-container .info-headers, .mobile-container .info-headers {
-    font-size: 28px;
+.side-container .info-headers,
+.mobile-container .info-headers {
+    font-size: 24px;
+    margin: 15px 0 20px;
     font-weight: bold;
+    color: #c44986;
+}
+.sideworks {
+    text-align: center;
+    width: 90%;
+    padding-bottom: 30px;
+}
+.sideworks img {
+    width: 100%;
+    height: 15rem;
+}
+.sideworks p {
+    color: #333;
+}
+.sideworks a {
+    color: #c24985;
+    font-weight: 600;
 }
 .works-mobile {
     color: #fff;
-    padding: 15px 25px;
-    background-color: #c144ef;
+    padding: 15px 90px;
+    margin-bottom: 30px;
+    background-color: #c24985;
     background-image: radial-gradient(
             93% 87% at 87% 89%,
             rgba(0, 0, 0, 0.23) 0%,
@@ -54,7 +70,7 @@
         inset 0px -8px 36px rgba(0, 0, 0, 0.3),
         inset 0px 1px 5px rgba(255, 255, 255, 0.6),
         2px 19px 31px rgba(0, 0, 0, 0.2);
-    border-radius: 14px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
 
@@ -67,7 +83,7 @@
     cursor: pointer;
     display: none;
 }
-.mobile-container{
+.mobile-container {
     display: none;
 }
 
@@ -105,36 +121,34 @@
 
 @media (max-width: 480px) {
     .main-container {
-        padding: 30px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-self: center !important;
         justify-content: center !important;
-        text-align: center !important;
         align-items: center !important;
     }
     .main-container h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .main-container .brief-info {
-        font-size: 16px;
-    }
-    .main-container .info-headers {
         font-size: 18px;
         font-weight: bold;
     }
     .main-container .brief-points {
         font-size: 16px;
     }
-    .mobile-container{
+    .mobile-container {
         display: flex;
         flex-direction: column;
     }
-    .works-mobile{
+    .works-mobile {
         display: flex;
     }
     .side-container {
         display: none;
+    }
+    .brief-points {
+        padding: 10px;
+    }
+    .sideworks{
+        text-align: left;
     }
 }

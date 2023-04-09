@@ -1,51 +1,61 @@
 import React, { useState } from "react";
 import "./styles/gallery.css";
-import { ImNext, ImPrevious } from "react-icons/im"
-import { AiOutlineCloseCircle } from "react-icons/ai"
+import { ImNext, ImPrevious } from "react-icons/im";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const WspGallery = ({ gallerImages }) => {
-  const [slideNumber, setSlideNumber] = useState(0);
-  const [openModal, setOpenModal] = useState(false);
+    const [slideNumber, setSlideNumber] = useState(0);
+    const [openModal, setOpenModal] = useState(false);
 
-  const handleOpenModal = (index) => {
-    setSlideNumber(index);
-    setOpenModal(true);
-  };
-  const handleCloseModal = ()=>{
-    setOpenModal(false);
-  }
-  const prevSlide = () =>{
-    slideNumber === 0 ? setSlideNumber(gallerImages.length - 1) : setSlideNumber(slideNumber -1);
-  }
-  const nextSlide = ()=>{
-    slideNumber + 1 === gallerImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1);
-  }
-  return (
-    <>
-    {openModal && 
-        <div className={openModal ? "model open" : "model"}>
-            <AiOutlineCloseCircle className="btn-close" onClick={handleCloseModal} />
-            <ImNext className="btn-next" onClick={prevSlide} />
-            <ImPrevious className="btn-prev" onClick={nextSlide} />
-                <img src={gallerImages[slideNumber].img} />
-        </div>
-    }
-      <div className="galleryWrap">
-        {gallerImages &&
-          gallerImages.map((slide, index) => {
-            return (
-              <div
-                className="single-imgs"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img className="single-pic sm:w-full md:w-auto lg:w-auto xl:w-auto" src={slide.img} />
-              </div>
-            );
-          })}
-      </div>
-    </>
-  );
+    const handleOpenModal = (index) => {
+        setSlideNumber(index);
+        setOpenModal(true);
+    };
+    const handleCloseModal = () => {
+        setOpenModal(false);
+    };
+    const prevSlide = () => {
+        slideNumber === 0
+            ? setSlideNumber(gallerImages.length - 1)
+            : setSlideNumber(slideNumber - 1);
+    };
+    const nextSlide = () => {
+        slideNumber + 1 === gallerImages.length
+            ? setSlideNumber(0)
+            : setSlideNumber(slideNumber + 1);
+    };
+    return (
+        <>
+            {openModal && (
+                <div className={openModal ? "model open" : "model"}>
+                    <AiOutlineCloseCircle
+                        className="btn-close"
+                        onClick={handleCloseModal}
+                    />
+                    <ImNext className="btn-next" onClick={prevSlide} />
+                    <ImPrevious className="btn-prev" onClick={nextSlide} />
+                    <img src={gallerImages[slideNumber].img} />
+                </div>
+            )}
+            <div className="galleryWrap">
+                {gallerImages &&
+                    gallerImages.map((slide, index) => {
+                        return (
+                            <div
+                                className="single-imgs"
+                                key={index}
+                                onClick={() => handleOpenModal(index)}
+                            >
+                                <img
+                                    className="single-pic sm:w-full md:w-auto lg:w-auto xl:w-auto"
+                                    src={slide.img}
+                                />
+                            </div>
+                        );
+                    })}
+            </div>
+        </>
+    );
 };
 
 export default WspGallery;
