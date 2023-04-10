@@ -4,3 +4,7 @@
     background-size: cover;
     background-blend-mode: overlay; */
 }
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}

@@ -15,7 +15,7 @@ function Donate() {
     return (
         <div
             id="donate-container"
-            className="box-content mob:px-5 py-16 flex justify-center"
+            className="box-content mob:px-8 py-16 flex justify-center"
         >
             <div className="flex wide:flex-row mob:flex-col box-border max-w-[1024px] w-full">
                 <div className="flex wide:w-1/2 flex-col mb-8">
@@ -24,8 +24,9 @@ function Donate() {
                         <br />
                         <b className="monospace">Manjeet Kaur Foundation</b>
                     </p>
+                    <hr /><br />
                     <img
-                        className="rounded-2xl mb-5"
+                        className="rounded-2xl my-8"
                         src={DonateImg}
                         alt="Donation"
                     />
@@ -44,9 +45,7 @@ function Donate() {
                         <br />
 
                         <p>
-                            <b>Plea for Help:</b>
-                            <br />
-                            <br />
+                            <b className="text-pink-600 text-2xl block mb-3 mt-5">Plea for Help</b>
                             We urgently need your help to provide these children
                             with the support they need to thrive. Every dollar
                             counts, and we implore you to make a donation today.
@@ -57,9 +56,7 @@ function Donate() {
                         <br />
 
                         <p>
-                            How Your Donation Can Help:
-                            <br />
-                            <br />
+                            <b className="text-pink-600 text-2xl block mb-3 mt-5">How will your donation help?</b>
                             <b>
                                 📌 Just $25 can provide a week's worth of
                                 nutritious food for a hungry child.
