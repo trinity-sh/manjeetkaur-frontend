@@ -1,5 +1,5 @@
 import React from "react";
-
+import founder from "../assets/work/founder.jpeg"
 function About() {
     return (
         <div id="about">
@@ -11,9 +11,9 @@ function About() {
                     <div className="flex justify-between flex-col md:flex-row items-center">
                         <div className="lg:w-3/4 md:w-1/2 md:h-96 mb-4 md:mb-0 mr-4 md:mr-8">
                             <img
-                                src="https://www.daysoftheyear.com/wp-content/uploads/international-day-of-charity-1.jpg"
+                                src={founder}
                                 alt="Company logo"
-                                className="rounded-xl w-full object-cover h-full"
+                                className="rounded-xl w-full object-contain h-full"
                             />
                         </div>
                         <div className="md:w-3/4">
