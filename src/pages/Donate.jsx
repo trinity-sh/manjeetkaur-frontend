@@ -1,13 +1,21 @@
 import React from "react";
 import "./styles/donate.css";
 import DonateImg from "../assets/work3.jpeg";
-import { Box, Button, FormControlLabel, Radio, RadioGroup, Slider, TextField } from "@mui/material";
+import {
+    Box,
+    Button,
+    FormControlLabel,
+    Radio,
+    RadioGroup,
+    Slider,
+    TextField,
+} from "@mui/material";
 
 function Donate() {
     return (
         <div
             id="donate-container"
-            className="box-content p-16 flex justify-center"
+            className="box-content mob:px-5 py-16 flex justify-center"
         >
             <div className="flex wide:flex-row mob:flex-col box-border max-w-[1024px] w-full">
                 <div className="flex wide:w-1/2 flex-col mb-8">
@@ -75,24 +83,64 @@ function Donate() {
                 </div>
                 <div className="flex wide:w-1/2 wide:ml-10">
                     <div className="rounded-2xl bg-white p-6 h-full w-full space-y-10 flex flex-col">
-                        <TextField className="w-full m-3" label="Name" variant="outlined" type="text" required />
-                        <TextField className="w-full" label="Email" variant="outlined" type="email" required />
-                        <TextField className="w-full" label="Phone" variant="outlined" type="tel" required />
-                        <TextField className="w-full" label="Message (optional)" multiline maxRows={7} minRows={7} />
-                        <p><hr /><br />Donation Type<span className="text-red-600">{` `}*</span></p>
-                        
+                        <TextField
+                            className="w-full m-3"
+                            label="Name"
+                            variant="outlined"
+                            type="text"
+                            required
+                        />
+                        <TextField
+                            className="w-full"
+                            label="Email"
+                            variant="outlined"
+                            type="email"
+                            required
+                        />
+                        <TextField
+                            className="w-full"
+                            label="Phone"
+                            variant="outlined"
+                            type="tel"
+                            required
+                        />
+                        <TextField
+                            className="w-full"
+                            label="Message (optional)"
+                            multiline
+                            maxRows={7}
+                            minRows={7}
+                        />
+                        <p>
+                            <hr />
+                            <br />
+                            Donation Type
+                            <span className="text-red-600">{` `}*</span>
+                        </p>
+
                         <RadioGroup
-                        className="self-center"
+                            className="self-center"
                             row
                             aria-labelledby="demo-row-radio-buttons-group-label"
                             name="row-radio-buttons-group"
                             label="Donation Type"
-                            >
-                            <FormControlLabel value="female" control={<Radio />} label="One Time" />
-                            <FormControlLabel value="male" control={<Radio />} label="Monthly" />
+                        >
+                            <FormControlLabel
+                                value="female"
+                                control={<Radio />}
+                                label="One Time"
+                            />
+                            <FormControlLabel
+                                value="male"
+                                control={<Radio />}
+                                label="Monthly"
+                            />
                         </RadioGroup>
                         <hr />
-                        <p>Select donation amount (in USD) <span className="text-red-600">{` `}*</span></p>
+                        <p>
+                            Select donation amount (in USD){" "}
+                            <span className="text-red-600">{` `}*</span>
+                        </p>
                         <Box sx={{ width: 300 }} className="self-center">
                             <Slider
                                 required
@@ -103,17 +151,31 @@ function Donate() {
                                 valueLabelDisplay="on"
                                 getAriaValueText={(val) => `USD ${val}`}
                                 marks={[
-                                    { value: 100, label: '$100' },
-                                    { value: 250, label: '$200' },
-                                    { value: 500, label: '$500' },
-                                    { value: 1000, label: '$1000' }
+                                    { value: 100, label: "$100" },
+                                    { value: 250, label: "$200" },
+                                    { value: 500, label: "$500" },
+                                    { value: 1000, label: "$1000" },
                                 ]}
                             />
                         </Box>
                         <hr />
-                        <p>Or enter amount (in USD) <span className="text-red-600">{` `}*</span></p>
-                        <TextField className="w-full" label="$ USD.00" variant="outlined" type="email" />
-                        <Button variant="outlined" className="w-full" size="large">DONATE and support 💝</Button>
+                        <p>
+                            Or enter amount (in USD){" "}
+                            <span className="text-red-600">{` `}*</span>
+                        </p>
+                        <TextField
+                            className="w-full"
+                            label="$ USD.00"
+                            variant="outlined"
+                            type="email"
+                        />
+                        <Button
+                            variant="outlined"
+                            className="w-full"
+                            size="large"
+                        >
+                            DONATE and support 💝
+                        </Button>
                     </div>
                 </div>
             </div>
