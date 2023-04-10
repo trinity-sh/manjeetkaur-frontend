@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="flex flex-row justify-between items-center w-full max-w-[1300px] h-full">
                 <a
                     href="/"
-                    className="group px-5 w-32 overflow-visible h-20 text-5xl badscript flex items-center duration-[300ms]"
+                    className="group px-5 w-56 overflow-visible h-20 text-5xl badscript flex items-center duration-[300ms]"
                 >
                     <img src={Logo} alt="logo" />
                     {/* <span className="group-hover:text-white group-hover:h-30 text-pink-500 sprosans h-full flex items-center font-bold">
