@@ -20,7 +20,7 @@ const Navbar = () => {
                 </a>
 
                 <div className="h-full w-fit text-right mob:hidden flex items-center">
-                    {["Home", "About", "Our Work", "Gallery", "Contact Us"].map(
+                    {["Home", "About", "Our Work", "Contact Us"].map(
                         (i) => (
                             <div className="relative group px-4 font-semibold sprosans h-full flex flex-col justify-center items-center hover:bg-pink-500 duration-300 hover:border-b-[4px] border-b-[2px] border-pink-500">
                                 <span className="group-hover:text-white duration-[200ms] group-hover:border-b-[1.5px] group-hover:relative group-hover:-translate-y-[4px]">
