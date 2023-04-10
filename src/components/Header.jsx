@@ -18,7 +18,7 @@ function Header() {
                         />
                     </div>
                 </div>
-                <div className="absolute top-0 mt-3 md:m-3  flex">
+                <div className="absolute top-0 right-0 mt-3 md:m-3  flex">
                     <a href="http://www.facebook.com/groups/ManjeetKaurFoundation" className="p-2">
                         <FaFacebook className=" md:text-3xl text-blue-700 hover:text-blue-800" />
                     </a>

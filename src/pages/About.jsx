@@ -1,4 +1,6 @@
 import React from "react";
+import video from "../assets/mkfcare.mp4";
+import founder from "../assets/work/founder.jpeg"
 
 function About() {
     return (
@@ -11,9 +13,9 @@ function About() {
                     <div className="flex justify-between flex-col md:flex-row items-center">
                         <div className="lg:w-3/4 md:w-1/2 md:h-96 mb-4 md:mb-0 mr-4 md:mr-8">
                             <img
-                                src="https://www.daysoftheyear.com/wp-content/uploads/international-day-of-charity-1.jpg"
+                                src={founder}
                                 alt="Company logo"
-                                className="rounded-xl w-full object-cover h-full"
+                                className="rounded-xl w-full object-contain h-full"
                             />
                         </div>
                         <div className="md:w-3/4">
@@ -43,9 +45,13 @@ function About() {
                 <div className="lg:p-20 md:pt-12 md:px-12 mx-auto">
                     <div className="flex justify-between flex-col md:flex-row items-center">
                         <div className="lg:w-3/4 md:w-1/2 md:h-96 mb-4 md:mb-0 mr-4 md:mr-8">
-                            <video className="rounded-xl w-full object-cover h-full">
-                                <source src="movie.mp4" type="video/mp4" />
-                            </video>
+                            <video
+                                autoPlay
+                                muted
+                                loop
+                                src={video}
+                                className="rounded-xl w-full object-contain h-full"
+                            />
                         </div>
                         <div className="md:w-3/4">
                             <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:ml-4">
