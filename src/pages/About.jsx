@@ -47,8 +47,6 @@ function About() {
                         <div className="lg:w-3/4 md:w-1/2 md:h-96 mb-4 md:mb-0 mr-4 md:mr-8">
                             <video
                                 autoPlay
-                                muted
-                                loop
                                 src={video}
                                 className="rounded-xl w-full object-contain h-full"
                             />
