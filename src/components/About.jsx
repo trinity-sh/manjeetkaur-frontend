@@ -1,5 +1,5 @@
 import React from "react";
-import founder from "../assets/work/founder.jpeg"
+import founder from "../assets/work/founder.jpeg";
 function About() {
     return (
         <div id="about">
@@ -18,24 +18,20 @@ function About() {
                         </div>
                         <div className="md:w-3/4">
                             <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:ml-4">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed ultricies enim et risus
-                                vulputate, eu tincidunt ex blandit. Sed in nunc
-                                commodo, bibendum odio et, varius nisi. Vivamus
-                                mollis velit nec sem blandit bibendum. Ut vel
-                                dolor ullamcorper, faucibus lectus sed, auctor
-                                velit. Nullam porta hendrerit lectus, vel dictum
-                                nisi mollis nec.
+                                The Manjeet Kaur Foundation is an 80(g)
+                                registered organistion. The Foundation bears the
+                                name of Late Manjeet Kaur (mother of Guru Singh,
+                                Founder of the foundation), an epitome of
+                                caring, love and kindess.
                             </p>
                             <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:ml-4">
-                                Sed rutrum vestibulum ante, vel aliquet magna
-                                fermentum ut. Sed lacinia turpis ut mauris
-                                dapibus aliquam. Aenean vel sapien enim. Nullam
-                                sit amet magna sem. Donec tristique enim vel
-                                nunc dictum, ac elementum quam consectetur.
-                                Integer eget semper mi, nec fringilla nulla.
-                                Donec euismod enim sit amet orci pharetra, ut
-                                sagittis quam sagittis.
+                                The organistion is dedicated to serving the
+                                needy and provide assistance to individuals who
+                                are facing various challenges such as poverty,
+                                illness, and lack of education. <br />
+                                The foundation offers a wide range of services
+                                that are aimed at addressing the needs of the
+                                less fortunate members of the society.
                             </p>
                             <a
                                 href="/about"
