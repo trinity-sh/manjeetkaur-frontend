@@ -11,6 +11,7 @@ import {
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import MKFLogo from "../assets/logo-highres.png";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -48,18 +49,19 @@ const Navbar = () => {
     ];
 
     return (
-        <>
+        <div className="flex flex-col w-full">
+            <div className="w-full h-30 z-20 flex justify-center">
+                <div className="w-full max-w-[1300px] h-40 flex items-center">
+                    <img className="wide:h-[70%]" src={MKFLogo} alt="MKF Logo" />
+                </div>
+            </div>
+
             <div className="w-full h-20 shadow-md flex items-center justify-center navbg sticky top-0 bg-white z-20">
                 <div className="flex flex-row justify-between items-center w-full max-w-[1300px] h-full">
                     <a
                         href="/"
                         className="group px-5 w-56 overflow-visible h-20 text-5xl badscript flex items-center duration-[300ms]"
                     >
-                        <img
-                            className="mob:w-2/3 w-[83%]"
-                            src={Logo}
-                            alt="logo"
-                        />
                     </a>
                     <div className="h-full w-fit text-right mob:hidden flex items-center">
                     {navlinks.map((i) =>
@@ -136,7 +138,7 @@ const Navbar = () => {
                     <b><a href="https://manjeet.org">manjeet.org</a></b> is a registered trademark of <b>Manjeet Kaur Foundation</b>, a non-profit organisation.
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
