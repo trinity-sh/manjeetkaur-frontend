@@ -34,7 +34,7 @@ function Header() {
                         showArrows={false}
                         transitionTime={2000}
                         centerMode
-                        centerSlidePercentage={100}
+                        centerSlidePercentage={80}
                         infiniteLoop
                         autoPlay
                         stopOnHover={false}
@@ -63,7 +63,7 @@ function Header() {
                     </div>
                 </div>
 
-                <div className="z-[5] rounded-lg mx-8 max-w-[900px] p-6 bg-white absolute bottom-0 translate-y-1/2  shadow-xl transition-all duration-300 hover:shadow-2xl">
+                <div className="z-[5] rounded-lg mx-8 max-w-[900px] p-6 bg-white absolute bottom-0 translate-y-1/2 shadow-xl transition-all duration-300 hover:shadow-2xl">
                     <p className="custom-font font-bold text-center text-xl text-pink-700">
                         "Charity is the recognition of the fact that we have
                         more in common with those who are different from us than
