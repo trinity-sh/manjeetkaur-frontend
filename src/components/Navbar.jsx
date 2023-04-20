@@ -70,7 +70,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="bg-gray-900 flex flex-col w-full items-center z-50 sticky -top-[188px]">
+        <div className="bg-gray-900 flex flex-col w-full items-center z-50 sticky mob:top-0 -top-[188px]">
             <div className="mob:hidden w-full h-full max-w-[1300px] flex flex-row">
                 <div className="w-full h-[38px] flex items-center justify-between">
                     <div className="space-x-6 w-72 h-fit flex flex-row justify-center">
