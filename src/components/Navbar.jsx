@@ -27,13 +27,15 @@ const Navbar = () => {
     const navigate = useNavigate();
     const [open, setOpen] = useState(false);
 
+    const mobDropdownHeight = "600px";
+
     useEffect(() => {
         const ddown = document.getElementById("mob-drop-down");
 
         ddown.style.transitionProperty = "all";
         ddown.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
         ddown.style.transitionDuration = "450ms";
-        ddown.style.top = "-450px";
+        ddown.style.top = "-" + mobDropdownHeight;
     }, []);
 
     useEffect(() => {
@@ -41,7 +43,7 @@ const Navbar = () => {
         const ddown = document.getElementById("mob-drop-down");
 
         if (!open) {
-            ddown.style.top = "-450px";
+            ddown.style.top = "-" + mobDropdownHeight;
             hburg.style.backgroundColor = "white";
         } else {
             ddown.style.top = "5rem";
@@ -68,8 +70,8 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="bg-gray-900 flex flex-col w-full items-center sticky top-[-188px] z-50">
-            <div className="w-full h-full max-w-[1300px] flex flex-row">
+        <div className="bg-gray-900 flex flex-col w-full items-center sticky top-[0px] z-50">
+            <div className="mob:hidden w-full h-full max-w-[1300px] flex flex-row">
                 <div className="w-full h-[38px] flex items-center justify-between">
                     <div className="space-x-6 w-72 h-fit flex flex-row justify-center">
                         <span className="hover:underline hover:text-gray-400 cursor-pointer text-gray-500 font-bold text-sm">
@@ -145,7 +147,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="bg-white w-full h-[150px] z-20 flex justify-center px-5">
+            <div className="mob:hidden bg-white w-full h-[150px] z-20 flex justify-center px-5">
                 <div className="w-full max-w-[1300px] h-40 flex items-center justify-between">
                     <img
                         className="wide:h-[70%]"
@@ -278,8 +280,32 @@ const Navbar = () => {
 
             <div
                 id="mob-drop-down"
-                className="z-10 bg-white fixed w-full border shadow-xl flex flex-col items-center wide:hidden"
+                className="z-10 bg-white fixed w-full shadow-xl flex flex-col items-center wide:hidden"
             >
+                <div className="flex flex-row space-x-2 bg-gray-900 w-full h-14 p-3 justify-center">
+                    <input
+                        placeholder="Google Search site:manjeet.org"
+                        id="google-search"
+                        type="text"
+                        className="flex-grow outline-none h-full rounded-md px-2 border-gray-600 border sprosans text-gray-400 text-xs bg-gray-800"
+                    />
+                    <button
+                        type="submit"
+                        className="outline-none flex flex-row items-center text-white text-xs bg-pink-700 hover:bg-pink-800 transition duration-150 rounded-md shadow-sm px-2"
+                        onClick={() => {
+                            const gsearch =
+                                document.getElementById("google-search");
+                            window.location.href =
+                                "https://google.com/search?q=" +
+                                encodeURIComponent("site:manjeet.org ") +
+                                encodeURIComponent(gsearch.value);
+                        }}
+                    >
+                        <FaSearch size={10} />
+                        &nbsp;Search
+                    </button>
+                </div>
+
                 {navlinks.map((i) => (
                     <div
                         onClick={() => {
