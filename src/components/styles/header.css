@@ -1,0 +1,17 @@
+.herobg {
+    background: /* linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.8)),  */url(../../assets/donation-2.jpg) no-repeat;
+    background-size: cover;
+}
+
+#rainbow-gradient-border {
+    border-image: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    border-bottom-width: 30px;
+}
+
+.shadow-inset-t {
+    box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.99) inset;
+}
+
+.mob-transform {
+    transform: scale(2.5) translate(0, 5%);
+}
