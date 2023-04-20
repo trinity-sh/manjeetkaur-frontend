@@ -22,7 +22,7 @@ function Header() {
 
     return (
         <>
-            <div className="flex flex-col items-center justify-center overflow-visible mob:mb-44">
+            <div className="flex flex-col items-center justify-center overflow-visible mob:mb-44 relative">
                 <div
                     id="carousel-cont"
                     className="h-[calc(100vh-400px)] mob:h-[calc(100vh-5rem)] flex items-center justify-center w-[100%] relative"
@@ -63,7 +63,7 @@ function Header() {
                     </div>
                 </div>
 
-                <div className="z-[5] rounded-lg mx-8 max-w-[900px] p-6 bg-white absolute bottom-0 wide:translate-y-[-50%]  shadow-xl transition-all duration-300 hover:shadow-2xl hover:translate-y-[1px]">
+                <div className="z-[5] rounded-lg mx-8 max-w-[900px] p-6 bg-white absolute bottom-0 translate-y-1/2  shadow-xl transition-all duration-300 hover:shadow-2xl">
                     <p className="custom-font font-bold text-center text-xl text-pink-700">
                         "Charity is the recognition of the fact that we have
                         more in common with those who are different from us than
