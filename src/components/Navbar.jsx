@@ -310,7 +310,11 @@ const Navbar = () => {
                     <div
                         onClick={() => {
                             setOpen(false);
-                            navigate(`${i[1]}`);
+                            if (i[1].substring(0, 8) === "https://") {
+                                window.location.href = i[1];
+                            } else {
+                                return navigate(`${i[1]}`);
+                            }
                         }}
                         className="w-[90%] py-5 sprosans font-semibold text-center border-b border-gray-200 cursor-pointer transition duration-300 hover:bg-gray-200"
                     >
@@ -320,19 +324,19 @@ const Navbar = () => {
 
                 <div className="m-3 space-x-3 flex">
                     <a
-                        href="http://www.facebook.com/groups/ManjeetKaurFoundation"
+                        href="https://www.facebook.com/groups/ManjeetKaurFoundation"
                         className="p-2"
                     >
                         <FaFacebook className="text-4xl text-blue-700 hover:text-blue-800" />
                     </a>
                     <a
-                        href="http://www.instagram.com/ManjeetKaurFoundation"
+                        href="https://www.instagram.com/ManjeetKaurFoundation"
                         className="p-2"
                     >
                         <FaInstagram className="text-4xl text-pink-400 hover:text-pink-600" />
                     </a>
                     <a
-                        href="http://www.twitter.com/ManjeetKaurOrg"
+                        href="https://www.twitter.com/ManjeetKaurOrg"
                         className="p-2"
                     >
                         <FaTwitter className="text-4xl text-blue-400 hover:text-blue-600" />
