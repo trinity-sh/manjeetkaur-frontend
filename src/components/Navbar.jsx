@@ -22,6 +22,7 @@ import {
     FaTwitter,
 } from "react-icons/fa";
 import MKFLogo from "../assets/logo-highres.png";
+import MKFLogoBubble from "../assets/logo-highres-bubble.png";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -36,6 +37,40 @@ const Navbar = () => {
         ddown.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
         ddown.style.transitionDuration = "450ms";
         ddown.style.top = "-" + mobDropdownHeight;
+
+        /* const navSpan = document.getElementById("nav-manjeet-site");
+        const navImg = document.getElementById("nav-manjeet-logo");
+
+        navSpan.style.transitionProperty = "all";
+        navSpan.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
+        navSpan.style.transitionDuration = "450ms";
+        navImg.style.transitionProperty = "all";
+        navImg.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
+        navImg.style.transitionDuration = "450ms";
+
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+        const runOnLoop = async () => {
+            var switchState = true;
+
+            function cater() {
+                if (switchState) {
+                    navSpan.style.display = "none";
+                    navImg.style.display = "block";
+                } else {
+                    navSpan.style.display = "flex";
+                    navImg.style.display = "none";
+                }
+                switchState = !switchState;
+            }
+
+            for (;;) {
+                await sleep(5000);
+                cater();
+            }
+        };
+
+        runOnLoop(); */
     }, []);
 
     useEffect(() => {
@@ -229,9 +264,19 @@ const Navbar = () => {
                         onClick={() => navigate("/")}
                         className="cursor-pointer flex flex-row group h-full w-28"
                     >
-                        <span className="px-3 transition duration-300 group-hover:text-pink-600 group-hover:bg-white text-white group-hover:h-30 sprosans h-full flex items-center text-2xl">
-                            <span className="font-extrabold">manjeet</span>.org
+                        <span id="nav-manjeet-site" className="px-3 transition-all duration-300 group-hover:text-pink-600 group-hover:bg-white text-white group-hover:h-30 sprosans h-full flex items-center text-2xl">
+                            <span>
+                                <span className="font-extrabold">manjeet</span>
+                                .org
+                            </span>
                         </span>
+                        {/* <img
+                            id="nav-manjeet-logo"
+                            src={MKFLogoBubble}
+                            width="100%"
+                            alt="MKF Logo"
+                            className="hidden px-3 transition duration-300 group-hover:bg-white"
+                        /> */}
                     </div>
 
                     <div className="h-full w-fit text-right mob:hidden flex items-center">
