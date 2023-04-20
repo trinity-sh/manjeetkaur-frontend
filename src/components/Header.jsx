@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/header.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import MKFLogo from "../assets/logo-highres-bubble.png";
@@ -19,6 +19,23 @@ function Header() {
      *       across devices of all width
      * */
     const slides = [S1, S2, S3, S4, S5, S6, S7, S8, S9];
+    const [centerSlidePercentage, setCenterSlidePercentage] = useState(80);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const vw = Math.max(
+                document.documentElement.clientWidth || 0,
+                window.innerWidth || 0
+            );
+
+            if (vw < 1024) {
+                setCenterSlidePercentage(100);
+
+            } else if (vw >= 1024) {
+                setCenterSlidePercentage(80);
+            }
+        });
+    }, []);
 
     return (
         <>
@@ -34,7 +51,7 @@ function Header() {
                         showArrows={false}
                         transitionTime={2000}
                         centerMode
-                        centerSlidePercentage={80}
+                        centerSlidePercentage={centerSlidePercentage}
                         infiniteLoop
                         autoPlay
                         stopOnHover={false}
