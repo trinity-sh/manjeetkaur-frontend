@@ -8,6 +8,10 @@ html body #root {
     background-color: #fbfbfb;
 }
 
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .sprosans {
     font-family: 'Source Sans Pro', sans-serif;
 }
