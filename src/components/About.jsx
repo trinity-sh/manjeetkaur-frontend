@@ -2,8 +2,8 @@ import React from "react";
 import founder from "../assets/work/founder.jpeg";
 function About() {
     return (
-        <div id="about">
-            <div className="flex flex-col items-center justify-center h-auto md:h-full px-7">
+        <div id="about" className="max-w-[1300px] flex flex-col justify-center items-center self-center justify-self-center">
+            <div className="flex flex-col items-center justify-center px-7">
                 <div className="lg:p-20 md:pt-24 md:px-12 mx-auto">
                     <h2 className="text-xl mb-8 font-semibold leading-8 tracking-tight text-pink-600">
                         About Us
