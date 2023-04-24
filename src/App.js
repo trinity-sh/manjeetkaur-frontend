@@ -12,6 +12,7 @@ import About from "./pages/About";
 const App = () => {
     return (
         <BrowserRouter>
+            <div className="wide:pt-[263px] mob:pt-20 invisible" />
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

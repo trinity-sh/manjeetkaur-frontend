@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html body #root {
+#root {
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,1)), url(./assets/flock.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+html body {
     height: 100%;
     width: 100%;
     background-color: #fbfbfb;
