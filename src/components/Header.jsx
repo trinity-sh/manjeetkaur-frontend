@@ -44,10 +44,10 @@ function Header() {
 
     return (
         <>
-            <div className="flex flex-col items-center justify-center overflow-visible relative">
+            <div id ="header" className="flex flex-col items-center justify-center overflow-visible relative">
                 <div
                     id="carousel-cont"
-                    className="h-[calc(100vh-300px)] mob:h-[calc(100vh-5rem)] flex items-center justify-center w-[100%] relative"
+                    className="h-[calc(100vh-263px)] mob:h-[calc(100vh-5rem)] flex items-center justify-center w-[100%] relative"
                 >
                     <Carousel
                         className="h-full z-0"
@@ -66,7 +66,7 @@ function Header() {
                         interval={5000}
                     >
                         {slides.map((i) => (
-                            <div className="h-[calc(100vh-300px)] mob:h-[calc(100vh-5rem)] overflow-hidden">
+                            <div className="h-[calc(100vh-263px)] mob:h-[calc(100vh-5rem)] overflow-hidden">
                                 <img
                                     className="min-h-full object-cover"
                                     src={i}
@@ -75,7 +75,10 @@ function Header() {
                             </div>
                         ))}
                     </Carousel>
-                    <div id="dark-side" className="transition duration-300 absolute h-full w-full top-0 left-0 wide:shadow-inset-t bg-black bg-opacity-[0.6]" />
+                    <div
+                        id="dark-side"
+                        className="transition duration-300 absolute h-full w-full top-0 left-0 wide:shadow-inset-t bg-black bg-opacity-[0.6]"
+                    />
                     <div className="absolute flex flex-col items-center justify-center h-full w-full top-0 left-0">
                         <img
                             id="img-behind-urgent"
@@ -83,31 +86,34 @@ function Header() {
                             src={MKFLogo}
                             alt="MKF Logo"
                         />
+                        <div
+                            id="div-behind-urgent"
+                            className="text-center monospace hidden my-4 text-gray-400 hover:text-white"
+                        >
+                            <p className="my-2 monospace text-gray-200 max-w-[80vw]m-0 p-0">
+                                "Together, we can make a difference."
+                            </p>
+                            <u
+                                className="cursor-pointer monospace"
+                                onClick={() => navigate("/about")}
+                            >
+                                Know more
+                            </u>{" "}
+                            &gt;
+                        </div>
                         <p
                             id="header-urgent"
-                            className="transition-transform duration-1000 overflow-visible relative sprosans text-white text-6xl mob:text-4xl max-w-[1000px] mob:mx-8 bg-black p-8 rounded-lg bg-opacity-60 flex flex-col backdrop-blur-md"
+                            className="transition-transform duration-1000 overflow-visible relative sprosans  text-white text-6xl mob:text-4xl max-w-[1000px] mob:mx-8 bg-black p-8 rounded-lg flex flex-col"
                         >
-                            <div
-                                onClick={() => {
-                                    document.getElementById("header-urgent").style.transitionProperty = "all";
-                                    document.getElementById("header-urgent").style.transitionDuration = "800ms";
-                                    document.getElementById("header-urgent").style.display = "none";
-                                    document.getElementById("img-behind-urgent").style.display = "block";
-                                }}
-                                className="absolute bg-gray-900 opacity-70 backdrop-blur-lg text-black hover:text-red-700 rounded-full transition-all hover:opacity-100 top-0 right-0 w-[38px] h-[38px] flex items-center justify-center hover:bg-gray-900 text-xs font-extrabold p-3 translate-x-[10px] -translate-y-[10px]"
-                            >
-                                ✖
-                            </div>
                             <img
-                                className="wide:hidden h-[10vh] my-5 trans-png-dropshadow self-start mob:self-center"
+                                className="wide:hidden h-[8vh] mb-5 trans-png-dropshadow self-start mob:self-center"
                                 src={MKFLogo}
                                 alt="MKF Logo"
                             />
-                            <span className="font-bold sprosans wide:bg-gray-700 wide:backdrop-blur-lg wide:bg-opacity-40 w-fit mob:block">
-                                &nbsp;Help Us Fight&nbsp;
+                            <span className="font-bold sprosans  w-fit mob:block">
+                                Help Us Fight&nbsp;
                             </span>
-                            <span className="sprosans text-pink-600 font-bold bg-gray-800 bg-opacity-60 w-fit">
-                                &nbsp;
+                            <span className="sprosans text-pink-600 font-bold bg-opacity-60 w-fit">
                                 <span className="text-yellow-400">
                                     Summer
                                 </span>{" "}
@@ -136,7 +142,23 @@ function Header() {
                                 difference and ensure that no child goes hungry
                                 this summer.{" "}
                                 <b>Please consider donating today.</b> Thank you
-                                for your generosity.
+                                for your generosity.&nbsp;&nbsp;
+                                <span
+                                    onClick={() => {
+                                        document.getElementById(
+                                            "header-urgent"
+                                        ).style.display = "none";
+                                        document.getElementById(
+                                            "img-behind-urgent"
+                                        ).style.display = "block";
+                                        document.getElementById(
+                                            "div-behind-urgent"
+                                        ).style.display = "block";
+                                    }}
+                                    className="text-xs underline text-gray-400 monospace hover:text-gray-200 cursor-pointer"
+                                >
+                                    Dismiss
+                                </span>
                             </p>
                             <div className="flex flex-row space-x-8 my-5">
                                 <button
