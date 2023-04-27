@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import "./App.css";
@@ -14,6 +15,7 @@ const App = () => {
         <BrowserRouter>
             <div className="wide:pt-[263px] mob:pt-20 invisible" />
             <Navbar />
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
