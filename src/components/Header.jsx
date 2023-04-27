@@ -160,7 +160,7 @@ function Header() {
                                     Dismiss
                                 </span>
                             </p>
-                            <div className="flex flex-row space-x-8 my-5">
+                            <div className="flex flex-row space-x-8 my-5 mt-8">
                                 <button
                                     className="monospace text-black w-28 text-center font-semibold outline-none sprosans flex items-center justify-center rounded-md text-sm bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 duration-300 h-10"
                                     onClick={() => navigate("/donate")}
