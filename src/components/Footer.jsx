@@ -121,7 +121,7 @@ export default function Footer() {
                                 ))}
                             </div>
                             <p className="mt-10 text-center text-sm leading-5 text-gray-200">
-                                &copy; {date.getFullYear()} Your Company, Inc.
+                                &copy; {date.getFullYear()} Manjeet Kaur Foundation.
                                 All rights reserved.
                             </p>
                         </div>
