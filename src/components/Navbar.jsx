@@ -23,6 +23,7 @@ import {
 } from "react-icons/fa";
 import MKFLogo from "../assets/logo-highres.png";
 import MKFLogoBubble from "../assets/logo-highres-bubble.png";
+import Marquee from "react-fast-marquee";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -411,6 +412,45 @@ const Navbar = () => {
                         is a registered trademark of{" "}
                         <b>Manjeet Kaur Foundation</b>, a non-profit
                         organisation.
+                    </div>
+                </div>
+
+                <div
+                    id="urgent-headline"
+                    className="w-full h-[2.2rem] shadow-md flex items-center justify-center text-xs relative"
+                >
+                    <Marquee className="h-auto w-auto">
+                        <div className="w-40" />
+                        <span className="sprosans font-bold w-fit mob:block text-gray-400">
+                            Help Us Fight&nbsp;
+                        </span>
+                        <span className="sprosans text-pink-600 font-bold bg-opacity-60 w-fit">
+                            <span className="text-yellow-400">Summer</span>{" "}
+                            Hunger
+                        </span>
+                        <span className="sprosans w-fit mob:block text-gray-400">
+                            !&nbsp;
+                        </span>
+                        <span
+                            onClick={() => navigate("/donate")}
+                            className="hover:text-gray-300 hover:cursor-pointer hover:underline sprosans w-fit mob:block text-gray-400 whitespace-nowrap font-medium"
+                        >
+                            Many children rely on free or reduced-price school
+                            meals to access nutritious food during the year.
+                            With your support, we can make a difference and
+                            ensure that no child goes hungry this summer.{" "}
+                            <b>Donate now!</b>
+                        </span>
+                    </Marquee>
+                    <div
+                        onClick={() => {
+                            const item =
+                                document.getElementById("urgent-headline");
+                            item.style.display = "none";
+                        }}
+                        className="flex hover:bg-gray-800 hover:cursor-pointer justify-center items-center h-full absolute right-0 z-[999] text-white font-black bg-gray-700 w-[2.2rem]"
+                    >
+                        <span className="text-base">⨯</span>
                     </div>
                 </div>
             </div>
