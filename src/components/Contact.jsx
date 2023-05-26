@@ -1,3 +1,4 @@
+import { Mail } from "@mui/icons-material";
 import React from "react";
 
 function Contact() {
@@ -9,27 +10,32 @@ function Contact() {
                         Give us your valuable feedback.
                     </h2>
                     <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-                        Reprehenderit ad esse et non officia in nulla. Id
-                        proident tempor incididunt nostrud nulla et culpa.
+                        Your feedback is a precious resource for us, and we
+                        sincerely thank you in advance for taking the time to
+                        share your thoughts and suggestions.
                     </p>
                     <form className="mx-auto mt-10 flex max-w-md gap-x-4">
                         <label htmlFor="email-address" className="sr-only">
-                            Email address
+                            Message
                         </label>
                         <input
-                            id="email-address"
-                            name="email"
-                            type="email"
-                            autoComplete="email"
-                            required
-                            className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm sm:text-sm sm:leading-6 placeholder:text-white"
-                            placeholder="Enter your email"
+                            id="email-msg"
+                            name="email-msg"
+                            type="text"
+                            className="min-w-0 outline-none font-semibold flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm sm:text-sm sm:leading-6 placeholder:text-white"
+                            placeholder="Enter your message..."
                         />
                         <button
+                            onClick={() =>
+                                window.open(
+                                    "mailto:mfg@manjeet.org?subject=Feedback%20from%20Homepage",
+                                    "_blank"
+                                )
+                            }
                             type="submit"
                             className="flex-none rounded-md bg-white py-2.5 px-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         >
-                            Submit
+                            <Mail /> Mail Us
                         </button>
                     </form>
                     <svg
