@@ -85,13 +85,13 @@ function Header() {
                     <div className="absolute flex flex-col items-center justify-center h-full w-full top-0 left-0">
                         <img
                             id="img-behind-urgent"
-                            className="hidden wide:h-[40%] mob:w-[70%] trans-png-dropshadow self-cemter"
+                            className="wide:h-[40%] mob:w-[70%] trans-png-dropshadow self-cemter"
                             src={MKFLogo}
                             alt="MKF Logo"
                         />
                         <div
                             id="div-behind-urgent"
-                            className="text-center monospace hidden my-4 text-gray-400 hover:text-white"
+                            className="text-center monospace my-4 text-gray-400 hover:text-white"
                         >
                             <p className="my-2 sprosans text-gray-200 italic max-w-[80vw]m-0 p-0">
                                 "Together, we can make a difference."
@@ -104,7 +104,7 @@ function Header() {
                             </u>{" "}
                             &gt;
                         </div>
-                        <p
+                        {/* <p
                             id="header-urgent"
                             className="transition-transform duration-1000 overflow-visible relative sprosans text-white text-5xl mob:text-4xl max-w-[700px] mob:mx-20 bg-black p-[1.5rem] rounded-lg flex flex-col"
                         >
@@ -166,7 +166,7 @@ function Header() {
                                     Learn more...
                                 </button>
                             </div>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
 
