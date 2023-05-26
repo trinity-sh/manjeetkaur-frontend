@@ -22,6 +22,7 @@ import {
     FaTwitter,
 } from "react-icons/fa";
 import MKFLogo from "../assets/logo-highres.png";
+import MKFLogoBubble from "../assets/logo-highres-bubble.png";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -183,7 +184,10 @@ const Navbar = () => {
                             alt="MKF Logo"
                         />
 
-                        <div className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer">
+                        <a
+                            href="mailto:mkf@manjeet.org"
+                            className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer"
+                        >
                             <FaMailBulk
                                 size={40}
                                 className="mr-3"
@@ -197,9 +201,12 @@ const Navbar = () => {
                                     mkf@manjeet.org
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer">
+                        <div
+                            onClick={() => navigate("/donate")}
+                            className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer"
+                        >
                             <FaDonate
                                 size={40}
                                 className="mr-3"
@@ -217,7 +224,10 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer">
+                        <div
+                            onClick={() => navigate("/work")}
+                            className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer"
+                        >
                             <FaInfoCircle
                                 size={40}
                                 className="mr-3"
@@ -235,7 +245,10 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd5tOx0tLuqbsLVEVOkOvfCcKJHkaOpqSu8XgE_L5O5LpfWPg"
+                            className="p-3 flex flex-row h-[50%] items-center rounded-lg hover:bg-pink-100 transition duration-[300ms] cursor-pointer"
+                        >
                             <FaHandsHelping
                                 size={40}
                                 className="mr-3"
@@ -251,7 +264,7 @@ const Navbar = () => {
                                     out to? Let us know!
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -259,11 +272,11 @@ const Navbar = () => {
                     <div className="flex flex-row justify-between items-center w-full max-w-[1300px] h-full">
                         <div
                             onClick={() => navigate("/")}
-                            className="cursor-pointer flex flex-row group h-full w-28"
+                            className="cursor-pointer flex flex-row group h-full wide:w-28"
                         >
                             <span
                                 id="nav-manjeet-site"
-                                className="px-3 transition-all duration-300 group-hover:text-pink-600 group-hover:bg-white text-white group-hover:h-30 sprosans h-full flex items-center text-2xl"
+                                className="mob:hidden px-3 transition-all duration-300 group-hover:text-pink-600 group-hover:bg-white text-white group-hover:h-30 sprosans h-full flex items-center text-2xl"
                             >
                                 <span>
                                     <span className="font-extrabold">
@@ -272,13 +285,12 @@ const Navbar = () => {
                                     .org
                                 </span>
                             </span>
-                            {/* <img
-                            id="nav-manjeet-logo"
-                            src={MKFLogoBubble}
-                            width="100%"
-                            alt="MKF Logo"
-                            className="hidden px-3 transition duration-300 group-hover:bg-white"
-                        /> */}
+                            <img
+                                id="nav-manjeet-logo"
+                                src={MKFLogoBubble}
+                                alt="MKF Logo"
+                                className="wide:hidden px-4 py-3 h-[100%] transition duration-300 group-hover:bg-white"
+                            />
                         </div>
 
                         <div className="h-full w-fit text-right mob:hidden flex items-center">
