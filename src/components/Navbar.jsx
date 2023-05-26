@@ -78,7 +78,7 @@ const Navbar = () => {
         ["About Us", "/about", <PeopleAltOutlined />],
         ["Our Work", "/work", <HandshakeOutlined />],
         ["Donate", "/donate", <FavoriteBorderOutlined />],
-        ["Contact Us", "/#contact-us", <MailOutlineOutlined />],
+        ["Contact Us", "/#contact-us-footer", <MailOutlineOutlined />],
         [
             "Apply to Volunteer",
             "https://forms.gle/o3YhJuMiG78xdqfw9",
