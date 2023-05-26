@@ -448,7 +448,7 @@ const Navbar = () => {
                                 document.getElementById("urgent-headline");
                             item.style.display = "none";
                         }}
-                        className="flex hover:bg-gray-800 hover:cursor-pointer justify-center items-center h-full absolute right-0 z-[999] text-white font-black bg-gray-700 w-[2.2rem]"
+                        className="flex hover:bg-gray-800 hover:cursor-pointer justify-center items-center h-full absolute right-0 z-[5] text-white font-black bg-gray-700 w-[2.2rem]"
                     >
                         <span className="text-base">⨯</span>
                     </div>
