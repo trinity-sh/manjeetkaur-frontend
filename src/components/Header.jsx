@@ -44,7 +44,10 @@ function Header() {
 
     return (
         <>
-            <div id ="header" className="flex flex-col items-center justify-center overflow-visible relative">
+            <div
+                id="header"
+                className="flex flex-col items-center justify-center overflow-visible relative"
+            >
                 <div
                     id="carousel-cont"
                     className="h-[calc(100vh-263px)] mob:h-[calc(100vh-5rem)] flex items-center justify-center w-[100%] relative"
@@ -90,11 +93,11 @@ function Header() {
                             id="div-behind-urgent"
                             className="text-center monospace hidden my-4 text-gray-400 hover:text-white"
                         >
-                            <p className="my-2 monospace text-gray-200 max-w-[80vw]m-0 p-0">
+                            <p className="my-2 sprosans text-gray-200 italic max-w-[80vw]m-0 p-0">
                                 "Together, we can make a difference."
                             </p>
                             <u
-                                className="cursor-pointer monospace"
+                                className="cursor-pointer sprosans font-bold"
                                 onClick={() => navigate("/about")}
                             >
                                 Know more
@@ -103,23 +106,16 @@ function Header() {
                         </div>
                         <p
                             id="header-urgent"
-                            className="transition-transform duration-1000 overflow-visible relative sprosans  text-white text-6xl mob:text-4xl max-w-[1000px] mob:mx-8 bg-black p-8 rounded-lg flex flex-col"
+                            className="transition-transform duration-1000 overflow-visible relative sprosans text-white text-5xl mob:text-4xl max-w-[700px] mob:mx-20 bg-black p-[1.5rem] rounded-lg flex flex-col"
                         >
-                            <img
-                                className="wide:hidden h-[8vh] mb-5 trans-png-dropshadow self-start mob:self-center"
-                                src={MKFLogo}
-                                alt="MKF Logo"
-                            />
-                            <span className="font-bold sprosans  w-fit mob:block">
+                            <span className="font-bold sprosans w-fit mob:block">
                                 Help Us Fight&nbsp;
                             </span>
                             <span className="sprosans text-pink-600 font-bold bg-opacity-60 w-fit">
-                                <span className="text-yellow-400">
-                                    Summer
-                                </span>{" "}
+                                <span className="text-yellow-400">Summer</span>{" "}
                                 Hunger&nbsp;
                             </span>
-                            <p className="sprosans text-base text-white font-light">
+                            <p className="sprosans text-sm text-white font-light">
                                 <br />
                                 <b>
                                     Summer hunger is a critical issue affecting
@@ -136,13 +132,9 @@ function Header() {
                                     You can help end summer hunger by supporting
                                     our charity organization.
                                 </b>{" "}
-                                Your donation can provide a nutritious meal to a
-                                child in need, helping them to grow, learn, and
-                                thrive. With your support, we can make a
-                                difference and ensure that no child goes hungry
-                                this summer.{" "}
-                                <b>Please consider donating today.</b> Thank you
-                                for your generosity.&nbsp;&nbsp;
+                                With your support, we can make a difference and
+                                ensure that no child goes hungry this
+                                summer.&nbsp;&nbsp;
                                 <span
                                     onClick={() => {
                                         document.getElementById(
@@ -162,7 +154,7 @@ function Header() {
                             </p>
                             <div className="flex flex-row space-x-8 my-5 mt-8">
                                 <button
-                                    className="monospace text-black w-28 text-center font-semibold outline-none sprosans flex items-center justify-center rounded-md text-sm bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 duration-300 h-10"
+                                    className="monospace text-black w-28 text-center font-bold outline-none flex items-center justify-center rounded-md text-sm bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 duration-300 h-10"
                                     onClick={() => navigate("/donate")}
                                 >
                                     Donate ❤
